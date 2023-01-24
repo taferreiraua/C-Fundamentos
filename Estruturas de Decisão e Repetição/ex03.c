@@ -12,11 +12,7 @@
 int main() {
     
     int idades[15];
-    int F1 = 0;
-    int F2 = 0;
-    int F3 = 0;
-    int F4 = 0;
-    int F5 = 0;
+    int F1=0, F2=0, F3=0, F4=0, F5=0;
     
     printf("Insira 15 idades:\n");
     for(int i=0; i<15; i++){
