@@ -45,7 +45,6 @@ int main() {
         else
             break;
         
-        printf("not\n\n\n");
         qnt = qnt + 1;
     }
     
