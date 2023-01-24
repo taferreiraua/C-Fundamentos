@@ -13,15 +13,13 @@
 
 int main() {
     
-    int qnt;
-    
-    printf("Quantos votos deseja inserir?\n");
-    scanf("%d", &qnt);
-    
-    float votos[qnt];
+    float votos[] = {};
     float q1=0, q2=0, q3=0, q4=0, q5=0, q6=0;
+    int i=1;
+    float qnt = 0;
     
-    for(int i=0; i<qnt; i++) {
+    // contando os votos
+    while(i != 0) {
         printf("Digite o numero:\n");
         printf("[1]  Candidato 1\n");
         printf("[2]  Candidato 2\n");
@@ -29,21 +27,28 @@ int main() {
         printf("[4]  Candidato 4\n");
         printf("[5]  Nulo\n");
         printf("[6]  Branco\n");
-        scanf("%f", &votos[i]);
+        printf("[0]  Encerrar\n");
+        scanf("%f", &votos[i-1]);
         
-        if(votos[i]==1.0)
+        if(votos[i-1]==1.0)
             q1 = q1 + 1;
-        else if(votos[i]==2.0)
+        else if(votos[i-1]==2.0)
             q2 = q2 + 1;
-        else if(votos[i]==3.0)
+        else if(votos[i-1]==3.0)
             q3 = q3 + 1;
-        else if(votos[i]==4.0)
+        else if(votos[i-1]==4.0)
             q4 = q4 + 1;
-        else if(votos[i]==5.0)
+        else if(votos[i-1]==5.0)
             q5 = q5 + 1;
-        else
+        else if(votos[i-1]==6.0)
             q6 = q6 + 1;
+        else
+            break;
+        
+        printf("not\n\n\n");
+        qnt = qnt + 1;
     }
+    
     
     printf("Resultado dos votos:\n");
     printf("Candidato 1 -> %.f votos - %.2f%%;\n", q1, q1*100/qnt);
