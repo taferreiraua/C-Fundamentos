@@ -1,7 +1,7 @@
 #include <stdio.h>
 
- Considere os vetores A e B de inteiros positivos. Determine o vetor C que é interseção
-de A com B. Utilize o valor -1 para indicar final de vetor. 
+//Considere os vetores A e B de inteiros positivos. Determine o vetor C que é interseção
+//de A com B. Utilize o valor -1 para indicar final de vetor. 
 
 int main()
 {
