@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Para o vetor A, construa um vetor P formado pelos índices dos elementos pares de A.
+// Exemplo: Se A = [ 1 3 6 7 8 ] então P = [ 2 4 ]
 
 int main()
 {
